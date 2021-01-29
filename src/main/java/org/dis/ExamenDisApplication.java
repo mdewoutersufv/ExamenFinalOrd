@@ -34,7 +34,7 @@ public class ExamenDisApplication {
 	@Bean
 	public CommandLineRunner loadData(IPRepository IPRepository, IPRepository actorRepository) {
 		return (args) -> {
-			//Cargamos las películas por defecto
+			//Cargamos las ips
 			cargarIPJSON(IPRepository, DOCUMENTO_JSON);
 		};
 	}
@@ -46,7 +46,6 @@ public class ExamenDisApplication {
 		Gson gson = new Gson();
 		ips = gson.fromJson(doc_json,IP[].class);
 		int a = 2;
-
 
 	}
 

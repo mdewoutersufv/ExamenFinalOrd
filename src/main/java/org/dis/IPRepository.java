@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface IPRepository extends JpaRepository<IP, Long> {
 
-    List<IP> findByIp_fromStartsWithIgnoreCase(String ip);
+    //List<IP> findByIp_fromStartsWithIgnoreCase(String ip);
 
 }
